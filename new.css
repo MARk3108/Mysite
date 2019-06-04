@@ -1,0 +1,91 @@
+.logo{
+    position: absolute;
+    left: 37%;
+    top: -29px;
+}
+.wordlog{
+    position: absolute;
+    left: 45%;
+    top: 20px;
+}
+.menu{
+    position: absolute;
+    top: 10%;
+    left: 28%;
+
+}
+li{
+    float: left;
+    list-style-type: none;
+    font-family: Impact;
+    margin-right: 200px;
+    font-size: 25px;
+}
+a:hover{
+    color: #FF8000;
+    transition: all 400ms;
+}
+a {
+    text-decoration: none;
+    color: #000;
+    transition: all 450ms;
+}
+.left{
+    background-color: indianred;
+    position: absolute;
+    height: 100%;
+    width: 10%;
+    top: 0;
+    left: 0;
+}
+.right{
+    background-color: indianred;
+    position: absolute;
+    height: 100%;
+    width: 10%;
+    top: 0;
+    right: 0;
+}
+.tool{
+    font-family: Arial;
+    position: absolute;
+    top: 20%;
+    left: 20%;
+    font-size: 35px;
+}
+.vk{
+    position: absolute;
+    left: 30%;
+    top: 30%;
+}
+.inst{
+    position: absolute;
+    left: 60%;
+    top: 30%;
+}
+body{
+    background-image: url("email-pattern.png");
+}
+@media (max-width: 600px) {
+    .left{
+        display: none;
+    }
+    .right{
+        display: none;
+    }
+    .logo{
+        left: 20%;
+    }
+    .menu{
+        left: 15%;
+    }
+    li{
+        margin-right: 10px;
+    }
+    .vk{
+        top: 40%;
+    }
+    .inst{
+        top: 40%;
+    }
+}
