@@ -39,6 +39,11 @@ a{
 .fotb{
     position: absolute;
     left: 10%;
+    transition: all 500ms;
+}
+.fotb:hover{
+    transform: rotate(10deg) scale(1.1);
+    transition: all 500ms;
 }
 h1{
     font-family: Arial;
@@ -78,7 +83,7 @@ h1{
     background:#fff;
     color:rebeccapurple;
 }
-.buy:before{
+.buy::before{
     content:'';
     position:absolute;
     top:0;
@@ -88,9 +93,24 @@ h1{
     background: rebeccapurple;
     transition:400ms ease all;
 }
-.buy:hover:before{
+.buy:hover::before{
     width:100%;
     transition:800ms ease all;
+}
+.buy::after{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 0;
+    width: 2px;
+    transition: 200ms ease all;
+    background: rebeccapurple;
+}
+.buy:hover::after{
+    height: 100%;
+    transition: 400ms ease all;
+    transition-delay: 700ms;
 }
 .y4{
     position: absolute;
@@ -100,6 +120,11 @@ h1{
 .lem{
     position: relative;
     left: 70%;
+    transition: all 500ms;
+}
+.lem:hover{
+    transform: rotate(-10deg) scale(1.1);
+    transition: all 500ms;
 }
 .lim{
     position: absolute;
